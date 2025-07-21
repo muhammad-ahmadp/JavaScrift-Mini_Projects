@@ -1,0 +1,77 @@
+/* Base reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.counter-container {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.counter-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#counter {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Button styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#increase {
+  background-color: #28a745;
+  color: white;
+}
+
+#decrease {
+  background-color: #dc3545;
+  color: white;
+}
+
+#reset {
+  background-color: #ffc107;
+  color: black;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Hover effects */
+button:not(:disabled):hover {
+  filter: brightness(1.1);
+}

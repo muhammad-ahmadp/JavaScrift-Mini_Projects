@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello {
+            color: purple;
+            background-color: antiquewhite;
+            padding: 10px;
+            border: 1px solid transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50, -50%);
+        }
+
+        .myimg {
+            width: 300px;
+            height: 300px;
+        }
+
+        .highlight {
+            color: green;
+            background-color: purple;
+            padding: 12px;
+        }
+
+        .li {
+            color: orange;
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        #device {
+            text-transform: capitalize;
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+            padding: 70px;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-size: 10rem;
+             color: #555; */
+
+        }
+
+        #fileinp {
+            display: none;
+        }
+
+        #btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            background-color: rgb(34, 210, 187);
+            user-select: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #btn:hover {
+            background-color: rgb(34, 163, 146);
+        }
+
+        #mouse {
+            background-color: plum;
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #hovermouse {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            position: absolute;
+            pointer-events: none;
+            /* so it doesn't block clicks */
+            z-index: 1000;
+            transition: top 0.15s ease, left 0.15s ease;
+            /* smoother following */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .lt {
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+        input
+        {
+             padding: 12px 10px;
+             background-color: #777;
+             border: none;
+             color: #fff;
+             outline: none;
+             width: 30%;
+             margin-bottom: 1rem;
+        }
+        input::placeholder
+        {
+             color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div>
+        <h1>Hello World</h1>
+        <h1 class="">Hell'o JavaScirft</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi alias dolor quis distinctio sed fugit
+            incidunt aliquid pariatur facilis enim.</p>
+    </div> -->
+
+
+
+    <!-- <ul>
+        <li>Mango</li>
+        <li>Apple1</li>
+        <li>Apple2</li>
+        <li>Apple3</li>
+        <li>Apple4</li>
+    </ul> -->
+
+
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>2</li>
+        <li>4</li>
+        <li>2</li>
+        <li>5</li>
+        <li>2</li>
+        <li>6</li>
+        <li>2</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Hi this is JS</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Hi this is JS</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Hi this is JS</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Hi this is JS</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Hi this is JS</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h6 style="cursor: pointer;">Click Me</h6>
+    <h5 class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, architecto.</h5> -->
+
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>2</li>
+        <li>4</li>
+        <li>2</li>
+        <li>5</li>
+        <li>2</li>
+
+        <input type="text" placeholder="Enter Your Name*">
+
+        <h4 id="device">Select Your Device</h4>
+
+        <select>
+            <option selected disabled>Select Device</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Iphone">Iphone</option>
+            <option value="Itel">Itel</option>
+            <option value="Vivo">Vivo</option>
+        </select>
+    </ul> -->
+
+    <!-- <div class="main">
+        <h1>1</h1> -->
+    <!-- <input type="file" id="fileinp">
+         <div id="btn">
+            Upload File
+         </div>
+    </div> -->
+
+
+    <!-- <div id="mouse">
+
+    </div> -->
+    <!--   
+        <ul>
+           <li>Apple</li>
+           <li>Banana</li>
+           <li>Grapes</li>
+           <li>Mango</li>
+           <li>Orange</li>
+        </ul>
+    -->
+
+    <input type="text" placeholder="Type here..." />
+    <p>Characters: <span id="character">0</span></p>
+    <p id="message" style="color: red; display: none;">Limit reached</p>
+
+    <!-- <div id="hovermouse"></div> -->
+    <script src="dom.js"></script>
+</body>
+
+</html>

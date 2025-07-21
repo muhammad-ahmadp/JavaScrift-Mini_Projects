@@ -1,0 +1,101 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Segoe UI", sans-serif;
+    transition: background-color 0.3s ease-in-out;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Button Wrapper */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Button Styles */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Color IDs (match your JS) */
+#white {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+#black {
+    background: #000000;
+}
+
+#red {
+    background: #e63946;
+}
+
+#blue {
+    background: #457b9d;
+}
+
+#green {
+    background: #2a9d8f;
+}
+
+#orange {
+    background: #f4a261;
+}
+
+#purple {
+    background: #9d4edd;
+}
+
+#yellow {
+    background: #ffbe0b;
+    color: #000;
+}
+
+#pink {
+    background: #ff69b4;
+}
+
+#gray {
+    background: #6c757d;
+}
+
+/* Hover Effect */
+.button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

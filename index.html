@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body class="text-[#4d4d4d] text-[1rem] font-[400]">
+    <div class="first__nav bg-[#343a40]">
+        <div class="f-nav container mx-auto px-5 py-3 md:flex hidden justify-between items-center">
+            <div class="f-contact"> <a class="text-white text-[16px]" href="">Email:
+                    <span class="text-[#32dbc6]">Info@company.com</span>
+                </a>
+                <a class="text-white text-[16px] ml-2.5" href="">Phone:
+                    <span class="text-[#32dbc6]">010-020-0230</span>
+                </a>
+            </div>
+
+            <div class="f-icons flex items-center gap-3">
+                <i
+                    class="fab fa-facebook-f text-[#32dbc6] font-bold cursor-pointer hover:text-[#50a299] transition duration-300"></i>
+                <i
+                    class="fab fa-instagram text-[#32dbc6] font-bold cursor-pointer hover:text-[#50a299] transition duration-300"></i>
+                <i
+                    class="fab fa-linkedin-in text-[#32dbc6] font-bold cursor-pointer hover:text-[#50a299] transition duration-300"></i>
+                <i
+                    class="fab fa-twitter text-[#32dbc6] font-bold cursor-pointer hover:text-[#50a299] transition duration-300"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR +++++++++++++++++++ SECTION START  -->
+    <header class="sticky top-0 bg-white shadow-lg z-50">
+        <!-- DESKTOP MENU  -->
+        <nav class="flex justify-between items-center container mx-auto px-5 py-5">
+            <div class="logo">
+                <a href="">
+                    <h1 class="text-black text-2xl font-bold">Create<span
+                            class="text-[#32dbc6] font-bold text-2xl">.</span>
+                    </h1>
+                </a>
+            </div>
+            <ul class="md:flex items-center gap-6 hidden">
+                <li><a class="text-[#32dbc6] text-[16px]" href="">Home</a></li>
+                <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Work</a></li>
+                <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Services</a></li>
+                <li><a class="hover:text-[#32dbc6] transition duration-300" href="">About <i
+                            class="fa-solid fa-angle-down ml-[2px]"></i></a></li>
+                <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Blog</a></li>
+                <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Contact</a></li>
+            </ul>
+            <div class="hamber md:hidden text-3xl font-bold" id="hamberBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- MOBILE MENU  -->
+    <div class="mobile-menu md:hidden bg-white shadow-lg" id="mobileMenu">
+        <ul class="flex flex-col gap-8">
+            <li><a class="text-[#32dbc6] text-[16px]" href="">Home</a></li>
+            <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Work</a></li>
+            <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Services</a></li>
+            <li><a class="hover:text-[#32dbc6] flex justify-between items-center transition duration-300" href="">About
+                    <i class="fa-solid fa-angle-down ml-[2px]"></i></a></li>
+            <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Blog</a></li>
+            <li><a class="hover:text-[#32dbc6] transition duration-300" href="">Contact</a></li>
+        </ul>
+        <div class="close absolute top-5 right-3 text-3xl font-bold" id="closeBtn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <!-- NAVBAR +++++++++++++++ SECTION END  -->
+
+    <main>
+        <section
+            class="hero__section bg-[url('/Images/hero_1.jpg.webp')] bg-cover bg-center h-screen w-full flex justify-center items-center flex-col">
+            <div class="hero__content flex items-center gap-2 justify-center">
+                <h1 class="text-[#fff] text-4xl">We Love To Build</h1>
+                <span class="loop-text text-4xl text-[#fff] " id="element"></span>
+            </div>
+            <p class="mb-4 text-xl">Lorem ipsum dolor sit <span class="text-[#32dbc6]">amet.</span></p>
+            <button
+                class="bg-[#21b9a6] rounded-[30px] py-2.5 px-7 cursor-pointer text-[12px] hover:bg-[#22c4b0] transition duration-300 outline-none">WATCH
+                VIDEO</button>
+        </section>
+        <!-- HERO +++++++++++++++++++++ SECTION END  -->
+
+        <!-- WORK +++++++++++++++++++++++++++ SECTION START  -->
+        <section class="work__section mt-14">
+            <h1 class="text-center text-black text-3xl mb-5 font-bold">Our Works</h1>
+            <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque,
+                delectus odio iure explicabo.</p>
+            <div class="cart__container container mx-auto px-5 grid grid-cols-1 gap-5  md:grid-cols-2 lg:grid-cols-3">
+                <div class="col1 w-full">
+                    <img class="max-w-full relative w-full hover:brightness-30 transition duration-300 hover:scale-103"
+                        src="/Images/img_1.jpg.webp" alt="">
+                </div>
+                <div class="col w-full">
+                    <img class="max-w-full w-full relative  hover:brightness-30 transition duration-300 hover:scale-103"
+                        src="/Images/img_2.jpg.webp" alt="">
+                </div>
+                <div class="col w-full">
+                    <img class="max-w-full w-full relative  hover:brightness-30 transition duration-300 hover:scale-103"
+                        src="/Images/img_3.jpg.webp" alt="">
+                </div>
+                <div class="col w-full">
+                    <img class="max-w-full relative w-full hover:brightness-30 transition duration-300 hover:scale-103"
+                        src="/Images/img_4.jpg.webp" alt="">
+                </div>
+                <div class="col w-full">
+                    <img class="max-w-full w-full relative  hover:brightness-30 transition duration-300 hover:scale-103"
+                        src="/Images/img_5.jpg.webp" alt="">
+                </div>
+                <div class="col w-full">
+                    <img class="max-w-full w-full relative  hover:brightness-30 transition duration-300 hover:scale-103"
+                        src="/Images/img_6.jpg.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- WORK ++++++++++++++++++ SECTION END  -->
+
+        <!-- SERVICE +++++++++++++++++++ SECTION START  -->
+        <section class="out-services mt-14">
+            <h1 class="text-center text-black text-3xl mb-5 font-bold">Our Services</h1>
+            <div
+                class="service__container container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10 mt-2.5">
+                <div class="box flex gap-4 justify-between">
+                    <div class="box-icon">
+                        <span class="material-icons text-primary text-[#32dbc6] text-5xl">laptop</span>
+                    </div>
+                    <div class="box-content">
+                        <h3 class="text-black text-xl">Web Design</h3>
+                        <p class="text-[#4d4d4d] leading-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perferendis quis molestiae vitae
+                            eligendi at.</p>
+                        <a class="text-[#32dbc6] " href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="box flex gap-4 justify-between">
+                    <div class="box-icon">
+                        <span class="material-icons text-primary text-[#32dbc6]">shopping_cart</span>
+
+                    </div>
+                    <div class="box-content">
+                        <h3 class="text-black text-xl">eCommerce</h3>
+                        <p class="text-[#4d4d4d] leading-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perferendis quis molestiae vitae
+                            eligendi at.</p>
+                        <a class="text-[#32dbc6] " href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="box flex gap-4 justify-between">
+                    <div class="box-icon">
+                        <span class="material-icons text-primary text-[#32dbc6] ">question_answer</span>
+                    </div>
+                    <div class="box-content">
+                        <h3 class="text-black text-xl">Web Applications</h3>
+                        <p class="text-[#4d4d4d] leading-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perferendis quis molestiae vitae
+                            eligendi at.</p>
+                        <a class="text-[#32dbc6] " href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="box flex gap-4 justify-between">
+                    <div class="box-icon">
+                        <span class="material-icons text-primary text-[#32dbc6]">format_paint</span>
+                    </div>
+                    <div class="box-content">
+                        <h3 class="text-black text-xl">Branding</h3>
+                        <p class="text-[#4d4d4d] leading-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perferendis quis molestiae vitae
+                            eligendi at.</p>
+                        <a class="text-[#32dbc6] " href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="box flex gap-4 justify-between">
+                    <div class="box-icon">
+                        <span class="material-icons text-primary text-[#32dbc6]">extension</span>
+                    </div>
+                    <div class="box-content">
+                        <h3 class="text-black text-xl">Copy Writing</h3>
+                        <p class="text-[#4d4d4d] leading-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perferendis quis molestiae vitae
+                            eligendi at.</p>
+                        <a class="text-[#32dbc6] " href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="box flex gap-4 justify-between">
+                    <div class="box-icon">
+                        <span class="material-icons text-primary text-[#32dbc6]">phonelink</span>
+                    </div>
+                    <div class="box-content">
+                        <h3 class="text-black text-xl">Mobile Applications</h3>
+                        <p class="text-[#4d4d4d] leading-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Perferendis quis molestiae vitae
+                            eligendi at.</p>
+                        <a class="text-[#32dbc6] " href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- SERVICE +++++++++++++ SECTION END  -->
+
+        <!-- ABOUT ++++++++++++ SECTION START  -->
+        <section class="about__section mt-20  container mx-auto px-5">
+            <div class="about__container flex justify-between gap-5 flex-col-reverse md:flex-row">
+                <div class="about__content">
+                    <h1 class="text-black text-3xl mb-5 font-bold">About Us</h1>
+                    <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet incidunt magnam
+                        corrupti, odit eos harum quaerat nostrum voluptatibus aspernatur eligendi accusantium cum,
+                        impedit blanditiis voluptate commodi doloribus, nemo dignissimos recusandae.</p>
+                    <div class="about-second-content flex justify-between gap-2.5 flex-col md:flex-row">
+                        <div class="about1">
+                            <span class="material-icons text-secondary text-[#6c757d]">phonelink</span>
+                            <h3 class="text-xl text-gray-600 mb-5">Web & Mobile Specialties</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
+                            <a class="text-[#32dbc6]" href="">Learn More</a>
+                        </div>
+                        <div class="about1">
+                            <span class="material-icons text-secondary text-[#6c757d]">extension</span>
+                            <h3 class="text-xl text-gray-600 mb-5">Intuitive Thinkers</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
+                            <a class="text-[#32dbc6]" href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img class="w-full max-w-full rounded-[.25rem] " src="/Images/about_1.jpg (1).webp" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT +++++++++++ SECTION END  -->
+
+        <!-- TEAM +++++++++++++ SECTION START  -->
+        <section class="team__section mt-20 container mx-auto px-5">
+            <h1 class="text-center text-black text-3xl mb-5 font-bold">Our Team</h1>
+            <div class="cart__container grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <div class="cart flex flex-col justify-center items-center">
+                    <img class="w-1/2 rounded-[50%] mb-5" src="/Images/person_2.jpg.webp" alt="">
+                    <h3 class="text-xl text-gray-700">John Rooster</h3>
+                    <p class="text-gray-400 mb-5">Co-Founder, President</p>
+                    <p class="text-center leading-6 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                        at
+                        consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est
+                        praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                    <div class="team-icons flex items-center justify-center gap-4">
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+                <div class="cart flex flex-col justify-center items-center">
+                    <img class="w-1/2 rounded-[50%] mb-5" src="/Images/person_3.jpg.webp" alt="">
+                    <h3 class="text-xl text-gray-700">Tom Sharp</h3>
+                    <p class="text-gray-400 mb-5">Co-Founder, COO</p>
+                    <p class="text-center leading-6 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                        at
+                        consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est
+                        praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                    <div class="team-icons flex items-center justify-center gap-4">
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+                <div class="cart flex flex-col justify-center items-center">
+                    <img class="w-1/2 rounded-[50%] mb-5" src="/Images/person_4.jpg.webp" alt="">
+                    <h3 class="text-xl text-gray-700">Winston Hodson</h3>
+                    <p class="text-gray-400 mb-5">Marketing</p>
+                    <p class="text-center leading-6 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                        at
+                        consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est
+                        praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                    <div class="team-icons flex items-center justify-center gap-4">
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="w-[45px] h-[45px] rounded-[50%] bg-gray-500 text-white flex items-center justify-center hover:bg-gray-700 transition duration-300"
+                            href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TEAM ++++++++++ SECTION END  -->
+
+        <!-- CONTACT ++++++++++++ SECTION START  -->
+        <section class="contact__section bg-[#f8f9fa] mt-20 p-4 pb-16">
+            <h1 class="text-center text-black text-3xl mb-5 font-bold">Contact Us</h1>
+            <div class="form__container flex gap-3.5 justify-evenly mt-4 flex-col md:flex-row container mx-auto px-5">
+                <form action="" class="bg-white shadow-lg p-[3rem] max-w-full">
+                    <h2 class="text-black text-xl mb-5">Contact Form</h2>
+                    <div class="flex gap-4 mb-3 group">
+                        <!-- First Name -->
+                        <div class="flex flex-col w-1/2 group-input">
+                            <label for="fname" class="mb-2 text-sm font-medium text-gray-700">First Name</label>
+                            <input id="fname" type="text"
+                                class="w-full border border-gray-500 rounded-[30px] px-4 py-2 outline-none">
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="flex flex-col w-1/2 group-input">
+                            <label for="lname" class="mb-2 text-sm font-medium text-gray-700">Last Name</label>
+                            <input id="lname" type="text"
+                                class="w-full border border-gray-500 rounded-[30px] px-4 py-2 outline-none">
+                        </div>
+                    </div>
+                    <div class="email mb-3">
+                        <label class="mb-2 text-sm font-medium text-gray-700" for="email">Email</label>
+                        <input type="email" class="w-full border border-gray-500 rounded-[30px] px-4 py-2 outline-none">
+                    </div>
+                    <div class="subject mb-3">
+                        <label class="mb-2 text-sm font-medium text-gray-700" for="subject">Subject</label>
+                        <input class="w-full border border-gray-500 rounded-[30px] px-4 py-2 outline-none" type="text"
+                            name="" id="subject">
+                    </div>
+                    <div class="textarea mb-3">
+                        <label class="mb-2 text-sm font-medium text-gray-700" for="message">Message</label>
+                        <textarea class="w-full border border-gray-500 rounded-[10px] px-4 py-2 h-[200px] outline-none"
+                            name="" id="message" placeholder="Write your note or question here..."></textarea>
+                    </div>
+                    <input type="submit"
+                        class="bg-[#21b9a6] rounded-[30px] py-2.5 px-10 cursor-pointer text-[12px] hover:bg-[#22c4b0] transition duration-300 outline-none">
+                </form>
+                <div class="location bg-white shadow-lg p-3.5 h-[300px]">
+                    <p class="text-black text-[18px]">Address</p>
+                    <p class="mb-5">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    <p class="text-black text-[18px]">Phone</p>
+                    <p class="mb-5 text-[#32dbc6]">+123 03344223</p>
+                    <p class="text-black text-[18px]">Email Address</p>
+                    <p>
+                        <a class="text-[#32dbc6]" href="">youremail@domain.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <a href="" class="">
+            <div class="containerc bg-[#32dbc6] py-[3rem] text-center">
+                <h2 class="text-[#fff] text-2xl">Let's Get Started</h2>
+            </div>
+        </a>
+    </main>
+    <!-- CONTACT ++++++++++++= SECTION END  -->
+
+    <!-- FOOTER +++++++++++ SECTION START  -->
+    <footer class=" py-[4em] bg-[#333333]">
+        <div class="footer container mx-auto px-5">
+            <div class="footer__container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-9">
+                <div class="about">
+                    <h3 class="text-white text-xl mb-3">About Us</h3>
+                    <ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam
+                            voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3 class="text-white text-xl mb-3">Features</h3>
+                    <ul class="flex flex-col gap-3.5">
+                        <li><a class="hover:text-white transition duration-300" href="">About Us</a></li>
+                        <li><a class="hover:text-white transition duration-300" href="">Services</a></li>
+                        <li><a class="hover:text-white transition duration-300" href="">Testimonials</a></li>
+                        <li><a class="hover:text-white transition duration-300" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <h3 class="text-white text-xl mb-3">Follow Us</h3>
+                    <ul class="flex gap-4">
+                        <li><a class="hover:text-white transition duration-300" href=""><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="hover:text-white transition duration-300" href=""><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a class="hover:text-white transition duration-300" href=""><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="hover:text-white transition duration-300" href=""><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h3 class="text-white text-xl mb-3">Subscribe Newsletter</h3>
+                    <form class="flex rounded-full border border-gray-500 overflow-hidden w-[300px]">
+                        <input type="email" placeholder="Enter Email"
+                            class="flex-1 px-4 py-2 bg-transparent text-gray-300 placeholder-gray-400 focus:outline-none">
+                        <button type="submit"
+                            class="bg-teal-400 text-white px-6 py-2 font-medium hover:bg-teal-500 transition-colors">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-auto">
+        <div class="last-fooer flex justify-center items-center py-5">
+            <p>Copyright ©2025 All rights reserved | made with ❤️ ☕ by Muhammad Ahmad </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const typed = new Typed("#element", {
+            strings: ["Mobile Apps", "Word Press", "Web Apps"],
+            typeSpeed: 60,
+            backSpeed: 90,
+            backDelay: 2500,
+            startDelay: 300,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|"
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
